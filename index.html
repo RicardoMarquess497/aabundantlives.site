@@ -29,49 +29,50 @@
   <!-- Título da Página -->
   <title>Controversial Video!</title>
 
-  <style type="text/css">
-    header {
-      color: white;
-      background-image: rgb(8, 0, 45);
-      background-color: rgb(255, 255, 255);
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
-      background-blend-mode: darken;
-    }
-  </style>
-  
-</head>
-
-<body>
-  <header class="py-4">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-           
-<style>
-  .titulo-vsl {
+ <style>
+  .titulo-vsl-desktop {
     color: #ff3b30;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 700;
-    line-height: 1.25;
+    line-height: 1.2;
     text-align: center;
-    margin: 10px 0 18px;
-    padding: 0;
+    width: min(950px, calc(100vw - 40px));
+    margin: 10px 0 18px 50%;
+    transform: translateX(-50%);
   }
 
-  .titulo-vsl span {
-    display: block;
+  .titulo-vsl-mobile {
+    display: none;
   }
 
   @media (max-width: 768px) {
-    .titulo-vsl {
+    .titulo-vsl-desktop {
+      display: none;
+    }
+
+    .titulo-vsl-mobile {
+      display: block;
+      color: #ff3b30;
       font-size: 18px;
+      font-weight: 700;
+      line-height: 1.25;
+      text-align: center;
+      margin: 10px 0 18px;
+      padding: 0;
+    }
+
+    .titulo-vsl-mobile span {
+      display: block;
     }
   }
 </style>
 
-<h1 class="titulo-vsl">
+<h1 class="titulo-vsl-desktop">
+  Tap The Play Button To Watch This Secret Millionaire's<br>
+  Final Message (And Use The 7-Sec Secret for Wealth)
+</h1>
+
+<h1 class="titulo-vsl-mobile">
   <span>Tap The Play Button To Watch This Secret</span>
   <span>Millionaire's Final Message (And Use The</span>
   <span>7-Sec Secret for Wealth)</span>
